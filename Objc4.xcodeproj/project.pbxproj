@@ -380,6 +380,7 @@
 				1AAFBBC71A761C6600F3EFFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
