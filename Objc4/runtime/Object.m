@@ -698,7 +698,7 @@ typedef struct {
    
     // Save ret0 so methods that return a struct might work.
     asm("copy %%r28, %0": "=r"(ret): );
-#endif hppa
+#endif //hppa
 
     // Messages to nil object always return nil
     if (! self) return nil;
@@ -717,7 +717,7 @@ typedef struct {
     // Unfortunately, it looks like the compiler puts something else in
     // r28 right after this instruction, so this is all for naught.
     asm("copy %0, %%r28": : "r"(ret));
-#endif hppa
+#endif //hppa
 
     // Message self with the specified selector and arguments
     return objc_msgSendv (self, sel, size, args); 
