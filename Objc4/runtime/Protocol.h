@@ -44,7 +44,7 @@ struct objc_method_description_list {
 {
 @private
 	char *protocol_name;
- 	struct objc_protocol_list *protocol_list;
+ 	struct objc_protocol_list *protocol_list; //遵从的父协议列表
   	struct objc_method_description_list *instance_methods, *class_methods;
 #ifdef NeXT_PDO	/* hppa needs 8 byte aligned protocol blocks */
 #if defined(__hpux__) || defined(hpux)

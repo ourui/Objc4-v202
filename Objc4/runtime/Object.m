@@ -749,7 +749,7 @@ typedef struct {
 		{
 		  Protocol *p = protocols->list[i];
     
-		  if ([p conformsTo:aProtocolObj])
+		  if ([p conformsTo:aProtocolObj]) //递归. 广度遍历: 找到遵守父协议名字是否和所比较的协议相同
 		    return YES;
 		}
 
